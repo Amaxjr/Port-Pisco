@@ -1,17 +1,72 @@
-                    /* Cabeçalho */
-.Header{
-        margin: 18px 14px;  
-  
+body{
+    background-color:#f5eddb;
+    font-family: Arial, sans-serif;
+    
 }
 
 
-        
+
+
+
+
+/* Cabeçalho */
+nav{
+    display: flex;
+    list-style: none;
+}
+    
+.Header li{  
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+        display:flex;
+        grid-template-rows: auto;
+        flex-direction: row;
+}        
 #Ft1{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+
     align-items: end;
+    width: 100px;
 }
+div.Pergunta img{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: end;
+
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 300%; /* 100% para cada slide */
+    animation: slide 9s infinite;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    font-size: 2rem;
+  }
+  
+  @keyframes slide {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+  
 
 
 
