@@ -23,6 +23,7 @@ nav{
         display:flex;
         grid-template-rows: auto;
         flex-direction: row;
+        ;
 }        
 #Ft1{
 
@@ -66,6 +67,7 @@ div.Pergunta img{
     66%  { transform: translateX(-200%); }
     100% { transform: translateX(0%); }
   }
+
   
 
 
