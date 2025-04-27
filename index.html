@@ -14,38 +14,41 @@
 
 <body>
     <section> <!-- Cabeçalho -->
-        <nav class="Header">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Hablidades</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href=#>contato</a></li>
-            </ul>
-        </nav> <!-- Cabeçalho -->
-    </section class="Inicio"> 
-    <div class="interface">
-        <div class="flex">
-            <div class="Texto-Inicial">
-                <h1>QUEM SOU EU?</h1>
-                <p>Me chamo Giselle , sou formada
-                    em psicologia e venho atuando desde
-                    2020 na realização de atendimentos
-                    psicoterapêuticos presenciais e
-                    online com a abordagem
-                    cognitivo comportamental.<span>Sou
-                        pós graduada em avaliação
-                        psicológica, psicodiagnóstico e
-                        neuropsicologia, além de ser
-                        qualificada em reabilitação
-                        neuropsicológica.</span>
-            </div> <!-- Texto -->
-            <div class="imagem-do-texto">
-                <img id="Ft1" src="Imgs/Gi-Circulo.png" alt="Giselle">
-            </div> <!-- Imagem -->
-        </div> <!-- Flex  -->
-    </div> <!-- Interface -->
-    </section> <!-- Inico -->
+       <header class="header">
+           <a href="/">Logo</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href=#>Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>          
+        
+    <h1>QUEM SOU EU?</h1>
+
+<section class="profile">
+    <div>
+        <img class="selfie" src="Imgs/Gi-Circulo.png" alt="Psicóloga Giselle">
+
+        <p class="text">Me chamo Giselle , sou formada
+            em psicologia e venho atuando desde
+            2020 na realização de atendimentos
+            psicoterapêuticos presenciais e
+            online com a abordagem
+            cognitivo comportamental.<span>Sou
+                pós graduada em avaliação
+                psicológica, psicodiagnóstico e
+                neuropsicologia, além de ser
+                qualificada em reabilitação
+                neuropsicológica.</span>
+        </p>
+    </div>
+</section>
+   
     <article class="carrosel"> <!-- Carrosel -->
         <h1>Serviços oferecidos:</h1>
         <div class="carrosel-inner">
@@ -82,17 +85,18 @@
                 Modalidade: online ou presencial. <br>
                 Investimento a partir de 149,99. <br>
                 Agende sua consulta e cuide da sua saúde mental! <br>
-                Formas de pagamento: pix e cartão (incluindo taxa).
-                <img src="WhatsApp Image 2025-04-13 at 16.39.03.jpeg" alt="consultorio">
+                Formas de pagamento: pix e cartão (incluindo taxa). <br>
+                <img class="local" src="WhatsApp Image 2025-04-13 at 16.39.03.jpeg" alt="Consultorio de Giselle">
         </div>
         <div class="consultorio">
             
         </div>
     </section> <!-- Pergunta -->
-    <footer class="Rodapé"> <!-- Rodapé e contato -->
+    <footer class=""> <!-- Rodapé e contato -->
         <section> <!-- Formulario de contato -->
             <h1>Entre em contato e <strong>agende sua consulta!</strong></h1>
             <form>
+                <div class="grid">
             <label 
                 for="Nome" 
                 id="nome">
@@ -142,10 +146,11 @@
                 for="Enviar"
                 id="enviar-forms" >
             </label>
-            <input 
+            <input class="submit" 
                 type="submit" 
                 value="Enviar" 
                 id="enviar">
+            </div>
             </form>   
             <br>             
         </section> <!-- Formulario de contato -->

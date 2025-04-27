@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Port-Pisco"
+    "liveServer.settings.multiRootWorkspaceName": "Port-Pisco",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
