@@ -91,24 +91,38 @@ body{
 /*/Formulário e Contato/*/
 
 .footer{
-  display: grid;
+  
 }
+
 .grid {
   display: grid;
   background-color: #856039;
+  width: 400px;
+  align-content: center;
 }
 form {
   text-align: center;
 }
 input{
-  background-color:;
-  border-radius:
-  width: 
+
+  border-radius: 5px;
+  height: 20px;
+  margin: 5px 0;
 }
 .submit{
   color: rgb(0, 0, 0);
-  background-color:;
-  padding: 0px;
+  background-color: ;
+  height: 30px;
+
+}
+
+.copyright{
+  width: 0 auto;
+  text-align: center;
+  background-color: #856039;
+  padding: 10px 10px;
+  box-shadow: 5px 5px 5px 5px black
+  
 }
 
 
