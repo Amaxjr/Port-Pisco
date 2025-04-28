@@ -254,12 +254,12 @@ footer {
 
 body.dark-theme .input-box input {
     background-color: #444;
-    color: #fff;
+    color: #000000;
     border: 1px solid #666;
 }
 
 body.dark-theme .input-box .submit {
-    background-color: #555;
+    background-color: #df6f00;
     color: #fff;
 }
 
@@ -288,7 +288,7 @@ body.dark-theme .menu li a:hover {
 
 body.dark-theme footer {
     background: #444;
-    color: #fff;
+    color: #000000;
 }
 
 body.dark-theme .copyright {
