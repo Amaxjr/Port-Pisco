@@ -1,4 +1,4 @@
-/* Botão de Tema */
+                            /* Botão de Tema */
 
 console.log('Arquivo js.js carregado!');
 console.log('JavaScript carregado!');
@@ -16,13 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('dark-theme');
 
     if (body.classList.contains('dark-theme')) {
-      themeToggleButton.textContent = 'Alternar para Tema Claro';
+      themeToggleButton.textContent = 'Tema Claro';
     } else {
-      themeToggleButton.textContent = 'Alternar para Tema Escuro';
+      themeToggleButton.textContent = 'Tema Escuro';
     }
   });
 
-/* Formulário */
+
+                            /* Formulário */
 
   const form = document.getElementById('user-form');
 

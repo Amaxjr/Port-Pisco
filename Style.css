@@ -19,33 +19,24 @@ a:hover {
     transition: 0.3s;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #856039;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 1000;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s ease, color 0.5s ease;
+.header{
+    background-color: #f5eddb;
 }
 
-.logo {
-  height: 100%; 
-  max-height: 70px; 
-  width: auto;
-  margin-left: 20px;
+#logoHeader{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin: 1rem;
 }
+
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    position: absolute;
+    right: 1px;
+    top: 3.5rem;
     gap: 10px;
 }
 
@@ -61,7 +52,7 @@ a:hover {
 }
 .menu li a:hover {
   display: block;
-  color: #df6f00;
+  color: #f5eddb;
   transition: color 0.5s ease;
 }
 
@@ -106,7 +97,7 @@ a:hover {
 
 .title {
     text-align: center;
-    background: #fcaa58;
+    background: #f5eddb;
     border-radius: 100px;
     padding: 20px;
     margin: 20px auto;
@@ -124,13 +115,8 @@ a:hover {
     width: 50%;
     margin: 20px auto;
     border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.selfie:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 .local {
@@ -144,15 +130,13 @@ a:hover {
 }
 
 body {
-    background-color: #eedac6;
+    background-color: #f7f7f7;
     font-family: Arial, sans-serif;
     color: #000;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .text-box {
-    background: linear-gradient(to bottom, #fcaa58, #856039);
-    color: #000000;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -207,7 +191,7 @@ section, article, .text-box, .input-box {
 }
 
 .input-box .submit {
-    background-color: #fcaa58;
+    background-color: #856039;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -217,7 +201,7 @@ section, article, .text-box, .input-box {
 }
 
 .input-box .submit:hover {
-    background-color: #e08e3c;
+    background-color: #947e66;
 }
 
 footer {
@@ -232,12 +216,20 @@ footer {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.social-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+.contato {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #5cee99;
+  font-size: 3px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0px 0px 8px #49a870;
+
+}
+.black{
+    color: #000000;
 }
 
 .social-box a img {
@@ -247,7 +239,7 @@ footer {
   transition: transform 0.3s ease; 
 }
 
-.social-box a img:hover {
+.black:hover{
   transform: scale(1.2); 
 }
 /* Tema Escuro */----------------------------------------------------------------------------------
@@ -313,7 +305,7 @@ body.dark-theme .local {
     top: 110px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #fcaa58;
+    background-color:#856039;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -323,7 +315,7 @@ body.dark-theme .local {
 }
 
 .theme-button:hover {
-    background-color: #e08e3c;
+    background-color:#cab49b;
 }
 
 body.dark-theme .text-box {
@@ -339,11 +331,15 @@ body.dark-theme .local {
 }
 
 body.dark-theme .menu li a {
-    color: #fcaa58;
+    color: #5cee99;
 }
 
 body.dark-theme .menu li a:hover {
-    color: #fff;
+    color: #ffffff;
+}
+
+body.dark-theme .black{
+    color: #ffffff;
 }
 
 
