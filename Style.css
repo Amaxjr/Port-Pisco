@@ -272,8 +272,9 @@ footer {
 
 }
 
-.contato:hover {
-    transform: scale(1);
+.contato button:hover {
+    transform: scale(1.25);
+    transition: .2s;
 
 }
 
