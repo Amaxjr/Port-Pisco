@@ -1,3 +1,5 @@
+/*/ NAVBAR /*/ ----------------------------------------------------------------------------------------------------------------------------------------
+
 body, ul, li, p{
     margin: 0px;
     padding: 0px;
@@ -49,11 +51,32 @@ a:hover {
   display: block;
 }
 
-/*/ CSS FLEXBOX 1 /*/ 
+/*/ Body /*/----------------------------------------------------------------------------------------------------------------------------------------
 
-h1{
-  margin-top: 150px;
+@media (max-width: 768px) {
+  .selfie, .local {
+    width: 90%;
+  }
+}
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.title{
   text-align: center;
+  background: #fcaa58;
+  border-radius: 10px;
+  padding: 20px; 
+  margin: 20px auto;
+  color: white; 
+  font-size: 16px; 
+  max-width: 800px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .profile {
@@ -79,98 +102,83 @@ background: ;
   display: block;
 }
 
-.text {
-  padding-top: 15px;
-}
-
 body{
     background-color:#eedac6;
     font-family: Arial, sans-serif;
     
 }
-/*/Formulário e Contato/*/
 
-.footer{
-  
+.text-box {
+  background: linear-gradient(to bottom, #fcaa58, #856039);
+  border-radius: 10px;
+  padding: 20px; 
+  margin: 20px auto;
+  color: white; 
+  font-size: 16px; 
+  max-width: 800px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  margin-top: 80px;
+  max-width: 1000px;
 }
 
-.grid {
-  display: grid;
-  background-color: #856039;
-  width: 400px;
-  align-content: center;
+section, article, .text-box, .input-box {
+  margin-bottom: 40px; /* Adiciona espaçamento abaixo de cada seção */
 }
-form {
-  text-align: center;
-}
-input{
-
-  border-radius: 5px;
-  height: 20px;
-  margin: 5px 0;
-}
-.submit{
-  color: rgb(0, 0, 0);
-  background-color: ;
-  height: 30px;
-
-}
+/*/Formulário e Contato/*/----------------------------------------------------------------------------------------
 
 .copyright{
   width: 0 auto;
   text-align: center;
   background-color: #856039;
   padding: 10px 10px;
-  box-shadow: 5px 5px 5px 5px black
+  box-shadow: 5px 5px 5px 5px black;
+  margin-top: 10px;
   
+}
+.input-box {
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.input-box input {
+  display: block;
+  width: 100%; 
+  margin: 10px 0; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; /
+  box-sizing: border-box;
+}
+
+.input-box .submit {
+  background-color: #fcaa58;
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; /
+}
+
+.input-box .submit:hover {
+  background-color: #e08e3c;
+}
+
+footer {
+  margin-top: 150px;
 }
 
 
-/*/    
-#Ft1{
 
-    align-items: end;
-    width: 100px;
-}
-div.Pergunta img{
-    width: 110px;
-    height: 110px;
-    display: flex;
-    border-radius: 50%;
-    justify-content: end;
 
-}
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    width: 300%; /* 100% para cada slide */
-    animation: slide 9s infinite;
-  }
-  
-  .carousel-item {
-    width: 100%;
-    flex: 0 0 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ccc;
-    font-size: 2rem;
-  }
-  /*/
-  @keyframes slide {
-    0%   { transform: translateX(0%); }
-    33%  { transform: translateX(-100%); }
-    66%  { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
-  }
-
-  
 
 
 

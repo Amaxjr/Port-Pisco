@@ -13,74 +13,92 @@
 </head>
 
 <body>
-    <section> <!-- Cabeçalho -->
+ <!-- Cabeçalho -->
+    <section>
        <header class="header">
            <a href="/">Logo</a>
             <nav>
                 <ul class="menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href=#>Contato</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Serviços">Serviços</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
     </section>          
         
-    <h1>QUEM SOU EU?</h1>
+    <h1 id="Sobre" class="title">QUEM SOU EU?</h1>
 
 <section class="profile">
     <div>
         <img class="selfie" src="Imgs/Gi-Circulo.png" alt="Psicóloga Giselle">
 
-        <p class="text">Me chamo Giselle , sou formada
-            em psicologia e venho atuando desde
-            2020 na realização de atendimentos
-            psicoterapêuticos presenciais e
-            online com a abordagem
-            cognitivo comportamental.<span>Sou
-                pós graduada em avaliação
-                psicológica, psicodiagnóstico e
-                neuropsicologia, além de ser
-                qualificada em reabilitação
-                neuropsicológica.</span>
-        </p>
+        <div class="text-box">
+
+            <p>Me chamo Giselle , sou formada
+                em psicologia e venho atuando desde
+                2020 na realização de atendimentos
+                psicoterapêuticos presenciais e
+                online com a abordagem
+                cognitivo comportamental.<span>Sou
+                    pós graduada em avaliação
+                    psicológica, psicodiagnóstico e
+                    neuropsicologia, além de ser
+                    qualificada em reabilitação
+                    neuropsicológica.</span>
+            </p>
+
+        </div>    
     </div>
 </section>
    
-    <article class="carrosel"> <!-- Carrosel -->
-        <h1>Serviços oferecidos:</h1>
-        <div class="carrosel-inner">
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Psicoterapia individual para adolescentes, adultos e idosos.
-            </div>
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Orientação profissional.
-            </div>
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Supervisão Clínica TCC.
-            </div>
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Terapia de casal.
-            </div>
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Avaliação psicológica.
-            </div>              
-            <div class="carrosel-item">
-                <img src="#" alt="">
-                Estimulação cognitiva para adolescentes e idosos.
-            </div>
-        </div> <!-- Carrosel -->    
+    <article class="carrosel">
+
+        <h2 id="Serviços" class="title">Serviços oferecidos:</h2>
+
+            <div class="text-box">
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Psicoterapia individual para adolescentes, adultos e idosos.
+                    </div>
+                <br>
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Orientação profissional.
+                    </div>
+                <br>
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Supervisão Clínica TCC.
+                    </div>
+                <br>
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Terapia de casal.
+                    </div>
+                <br>
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Avaliação psicológica.
+                    </div>   
+                <br>
+                    <div class="carrosel-item">
+                        <img src="#" alt="">
+                        Estimulação cognitiva para adolescentes e idosos.
+                    </div>
+
+            </div>   
     </article>
-    <section> <!-- Pergunta -->
-        <div class="Pergunta">
-            <h2>COMO FUNCIONA A PSICOTERAPIA COMIGO?</h2>
+
+ <!-- Pergunta -->
+
+<section>
+    <h3 class="title">COMO FUNCIONA A PSICOTERAPIA COMIGO?</h3>
+
+        <div class="text-box">
+            
                 Tempo por sessão: 50min. <br> 
                 Modalidade: online ou presencial. <br>
                 Investimento a partir de 149,99. <br>
@@ -91,37 +109,57 @@
         <div class="consultorio">
             
         </div>
-    </section> <!-- Pergunta -->
-    <footer class=""> <!-- Rodapé e contato -->
-        <section> <!-- Formulario de contato -->
-            <h1>Entre em contato e <strong>agende sua consulta!</strong></h1>
-            <form>
-                <div class="grid">
+</section>
+
+
+
+
+<!-- Rodapé e contato -->
+
+<footer> 
+    <section> 
+            <h4 class="title">Entre em contato e <strong>agende sua consulta!</strong></h4>
+
+    <form>
+        <div class="input-box">
             <label 
                 for="Nome" 
                 id="nome">
             </label>
+
+            <br>
+
             <input 
                 id="nome"
                 type="text"
-                placeholder="NOME" 
+                placeholder="Nome Completo" 
                 required>
-                <br>
+
+            <br>
+
             <label
                 for="Email" 
                 id="email">    
             </label>
-            <input 
+
+            <br>
+
+            <input
                 id="email"
                 type="email" 
-                placeholder="XXXXXX@X.com" 
+                placeholder="seuemail@.com" 
                 required>
+
                 <br>
+
             <label
                 for="Telefone" 
                 id="telefone" 
                 >
             </label>
+
+            <br>
+
             <input 
                 type="tel" 
                 placeholder="(XX) XXXXX-XXXX"
@@ -129,46 +167,64 @@
                 title="Format: XXXXXXXXXXX"
                 maxlength="11"
                 required>
-                <br>
+
+            <br>
+
             <label
                 for="Agendamento"
                 id="agendamento">
                 Escolha uma data:
             </label>
+
             <br>
+
             <input 
                 type="date" 
                 id="data" 
-                name="data" 
+                name="data"
+                min="2025-04-29" 
                 required>
-            <br>    
+
+            <br>  
+            
             <label 
                 for="Enviar"
-                id="enviar-forms" >
+                id="enviar-forms">
             </label>
+
             <br>
+
             <input class="submit" 
                 type="submit" 
                 value="Enviar" 
                 id="enviar">
-            </div>
-            </form>   
-            <br>             
-        </section> <!-- Formulario de contato -->
-        <section class="redes-sociais"> <!-- Redes sociais -->
-            <h1>Redes sociais</h1>
-            <div class="icones">
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-            </div> <!-- icones -->
-    </footer> <!-- Rodapé e contato -->
-       <br>
-       <br>
+        </div>
 
+    </form>   
+            <br>             
+    </section>
+
+ <!-- Redes sociais -->
+        <section>
+            <h5 class="title" id="Contato">Redes sociais</h5>
+            <div class="input-box">
+                <a href=""><i></i></a>
+                <a href=""><i></i></a>
+                <a href=""><i></i></a>
+            </div>
+        </section>
+
+</footer> <!-- Rodapé e contato -->
+
+
+       <br>
+    
+       <br>
+<!-- Copyright -->
         <div class="copyright">
             <p>Copyright © 2025 - André & Manoel & Elyel</p>
-        </div> <!-- Copyright -->
+        </div>
+
 </body>
 
 </html>
