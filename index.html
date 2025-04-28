@@ -13,22 +13,21 @@
 </head>
 
 <body>
- <!-- Cabeçalho -->
-    <section>
-       <header class="header">
-           <a href="/">Logo</a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+  <header class="header">
+    <img src="psychologist-svgrepo-com.svg" alt="Logo do site" class="logo"></img>
+    <nav>
+      <ul class="menu">
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#Serviços">Serviços</a></li>
+        <li><a href="#Agendamento">Agendamento</a></li>
+        <li><a href="#Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </section>          
-        
+  <!-- Botão de alternar tema -->
+  <button id="theme-toggle" class="theme-button">Alternar para Tema Escuro</button>
+
     <h1 id="Sobre" class="title">QUEM SOU EU?</h1>
 
 <section class="profile">
@@ -42,7 +41,7 @@
                 2020 na realização de atendimentos
                 psicoterapêuticos presenciais e
                 online com a abordagem
-                cognitivo comportamental.<span>Sou
+                cognitivo comportamental.<span> Sou
                     pós graduada em avaliação
                     psicológica, psicodiagnóstico e
                     neuropsicologia, além de ser
@@ -98,12 +97,11 @@
     <h3 class="title">COMO FUNCIONA A PSICOTERAPIA COMIGO?</h3>
 
         <div class="text-box">
-            
-                Tempo por sessão: 50min. <br> 
-                Modalidade: online ou presencial. <br>
-                Investimento a partir de 149,99. <br>
-                Agende sua consulta e cuide da sua saúde mental! <br>
-                Formas de pagamento: pix e cartão (incluindo taxa). <br>
+                Tempo por sessão:<b>50min.</b> <br> 
+                Modalidade: <b>Online ou Presencial</b> <br>
+                Investimento a partir de <b>149,99</b> <br>
+                <strong>Agende sua consulta e cuide da sua saúde mental!</strong> <br>
+                Formas de pagamento: <b>Pix e Cartão (Incluindo taxa)</b> <br>
                 <img class="local" src="WhatsApp Image 2025-04-13 at 16.39.03.jpeg" alt="Consultorio de Giselle">
         </div>
         <div class="consultorio">
@@ -118,101 +116,43 @@
 
 <footer> 
     <section> 
-            <h4 class="title">Entre em contato e <strong>agende sua consulta!</strong></h4>
+            <h4 class="title" id="Agendamento">Entre em contato e <strong>agende sua consulta!</strong></h4>
 
-    <form>
+    <form id="user-form">
         <div class="input-box">
-            <label 
-                for="Nome" 
-                id="nome">
-            </label>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
 
-            <input 
-                id="nome"
-                type="text"
-                placeholder="Nome Completo" 
-                required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" minlength="11" maxlength="11" required>
 
-            <br>
+            <label for="data">Escolha uma data:</label>
+            <input type="date" id="data" name="data" min="2025-04-29" required>
 
-            <label
-                for="Email" 
-                id="email">    
-            </label>
-
-            <br>
-
-            <input
-                id="email"
-                type="email" 
-                placeholder="seuemail@.com" 
-                required>
-
-                <br>
-
-            <label
-                for="Telefone" 
-                id="telefone" 
-                >
-            </label>
-
-            <br>
-
-            <input 
-                type="tel" 
-                placeholder="(XX) XXXXX-XXXX"
-                pattern="[0-9]{2} [0-9]{9}"
-                title="Format: XXXXXXXXXXX"
-                maxlength="11"
-                required>
-
-            <br>
-
-            <label
-                for="Agendamento"
-                id="agendamento">
-                Escolha uma data:
-            </label>
-
-            <br>
-
-            <input 
-                type="date" 
-                id="data" 
-                name="data"
-                min="2025-04-29" 
-                required>
-
-            <br>  
-            
-            <label 
-                for="Enviar"
-                id="enviar-forms">
-            </label>
-
-            <br>
-
-            <input class="submit" 
-                type="submit" 
-                value="Enviar" 
-                id="enviar">
+            <button type="submit" class="submit">Enviar</button>
         </div>
-
     </form>   
             <br>             
     </section>
 
  <!-- Redes sociais -->
-        <section>
-            <h5 class="title" id="Contato">Redes sociais</h5>
-            <div class="input-box">
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-            </div>
-        </section>
+<section>
+  <h5 class="title" id="Contato">Redes sociais</h5>
+  <div class="social-box">
+    <a href="https://wa.me/seu-numero" target="_blank" alt="WhatsApp">
+      <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/seu-perfil" target="_blank" alt="Instagram">
+      <img src="instagram-1-svgrepo-com.svg" alt="Instagram">
+    </a>
+    <a href="mailto:seu-email@gmail.com" alt="Email">
+      <img src="email-opened-svgrepo-com.svg" alt="Email">
+    </a>
+  </div>
+</section>
 
 </footer> <!-- Rodapé e contato -->
 
@@ -224,7 +164,5 @@
         <div class="copyright">
             <p>Copyright © 2025 - André & Manoel & Elyel</p>
         </div>
-
 </body>
-
 </html>
