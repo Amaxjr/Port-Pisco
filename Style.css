@@ -5,7 +5,6 @@ body, ul, li, p {
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
-    font-family: Arial;
 }
 
 a {
@@ -24,7 +23,7 @@ a:hover {
 }
 
 #logoHeader{
-    height: 5rem;
+    height: 6rem;
     width: 6rem;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -52,7 +51,7 @@ a:hover {
 }
 .menu li a:hover {
   display: block;
-  color: #df6f00;
+  color: #b19b84;
   transition: color 0.5s ease;
 }
 
@@ -95,16 +94,45 @@ a:hover {
     }
 }
 
-.title {
+.title1 {
     text-align: center;
-    background: #f5eddb;
     border-radius: 100px;
     padding: 20px;
     margin: 20px auto;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 20px;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+.title2 {
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}.title3 {
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}.title4 {
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: 800px;
     margin-bottom: 40px;
     margin-top: 120px;
 }
@@ -125,7 +153,6 @@ a:hover {
     width: 30%;
     margin: 40px auto;
     display: block;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -135,20 +162,38 @@ body {
     color: #000;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
-
-.text-box {
+.text-box0 {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Georgia', serif;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: justify;
+    max-width: 600px;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: #111;
+}
+.text-box1 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    max-width: 600px;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+
+}
+.text-box2 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    max-width: 600px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
-
 section, article, .text-box, .input-box {
     margin-bottom: 40px;
 }
@@ -160,7 +205,6 @@ section, article, .text-box, .input-box {
     text-align: center;
     background-color: #856039;
     padding: 10px 10px;
-    box-shadow: 5px 5px 5px 5px black;
     margin-top: 10px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -173,7 +217,6 @@ section, article, .text-box, .input-box {
     width: 400px;
     max-width: 90%;
     margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
@@ -216,18 +259,24 @@ footer {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.contato {
+.contato button {
   width: 40px;
   height: 40px;
   border: 0;
   border-radius: 50%;
   background-color: #5cee99;
-  font-size: 3px;
+  font-size: 1.2em;
   cursor: pointer;
   margin: 0 3px;
   box-shadow: 0px 0px 8px #49a870;
 
 }
+
+.contato:hover {
+    transform: scale(1);
+
+}
+
 .black{
     color: #000000;
 }
@@ -239,9 +288,6 @@ footer {
   transition: transform 0.3s ease; 
 }
 
-.black:hover{
-  transform: scale(1.2); 
-}
 /* Tema Escuro */----------------------------------------------------------------------------------
 
 body.dark-theme .input-box input {
