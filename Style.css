@@ -131,6 +131,29 @@ li.sobre :hover{
     }
     
 }
+
+@media (max-width: 542px) { 
+    
+    .gi-abrir-menu {
+        display: block ; 
+        position: absolute; 
+        top: 30px;        
+        right: 30px;       
+        z-index: 1000;     
+    }
+
+   
+    .gi-abrir-menu i {
+        display: inline-block !important; 
+        color: orange;  
+    }
+
+
+    .menu {
+        display: none;
+    }
+}
+
 @media (max-width: 904px) {
     .Giselle .foto {
       width: 316px;     
@@ -639,6 +662,7 @@ body.dark-theme .title5{
 .gi-abrir-menu i {
     color: orange;
     font-size: 30px;
+    display: none;
 }
 
 .menu-mobile {
