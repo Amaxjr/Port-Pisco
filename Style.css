@@ -7,12 +7,63 @@ body, ul, li, p {
     font-size: 1.2rem;
 }
 
+body {
+    background-color: #F7F4F1;
+    font-family: Arial, sans-serif;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 a {
     text-decoration: none;
     color: white;
     padding-right: 30px;
+    display: flex;
 }
+.sobre{
+    background-color: #856039;
+    border:rgb(151, 151, 151) solid 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+   
+}
+.serviços{
+    background-color: #856039;
+    border:rgb(151, 151, 151) solid 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
 
+}
+.agendamento{
+    background-color: #856039;
+    border:rgb(151, 151, 151) solid 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+  
+}
+.contatomenu{
+    background-color: #856039;
+    border:rgb(151, 151, 151) solid 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+    margin-right: 30px;
+}
+.sobre:hover,.serviços:hover,.agendamento:hover,.contatomenu:hover{
+    background-color: #947e66;
+    transform: scale(1);
+}
 a:hover {
     text-decoration: none;
     transition: 0.3s;
@@ -23,11 +74,14 @@ a:hover {
 }
 
 #logoHeader{
-    height: 6rem;
-    width: 6rem;
+    height: 8em;
+    width: 8em;
     border-radius: 50%;
     aspect-ratio: 1/1;
     margin: 1rem;
+    gap: 20px;
+    display: flex;
+    margin-left: 100px;
 }
 
 .menu {
@@ -39,18 +93,21 @@ a:hover {
     gap: 10px;
 }
 
+li.sobre :hover{
+    color: #856039;
+
+}
 .menu li {
-  
     list-style: none;
 }
 
 .menu li a {
-    display: block;
+    display: flex;
     color: rgb(0, 0, 0);
     transition: color 0.5s ease;
 }
-.menu li a:hover {
-  display: block;
+
+.sobre a:hover {
   color: #b19b84;
   transition: color 0.5s ease;
 }
@@ -102,8 +159,7 @@ a:hover {
     color: rgb(0, 0, 0);
     font-size: 20px;
     max-width: 800px;
-    margin-bottom: 40px;
-    margin-top: 120px;
+
 }
 .title2 {
     text-align: center;
@@ -113,9 +169,8 @@ a:hover {
     color: rgb(0, 0, 0);
     font-size: 20px;
     max-width: 800px;
-    margin-bottom: 40px;
-    margin-top: 120px;
-}.title3 {
+} 
+.title3 {
     text-align: center;
     border-radius: 100px;
     padding: 20px;
@@ -124,29 +179,45 @@ a:hover {
     font-size: 20px;
     max-width: 800px;
     margin-bottom: 40px;
-    margin-top: 120px;
-}.title4 {
-    text-align: center;
-    border-radius: 100px;
-    padding: 20px;
-    margin: 20px auto;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    max-width: 800px;
-    margin-bottom: 40px;
-    margin-top: 120px;
 }
-
+.title4 {
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(85, 59, 59);
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 20px;
+    
+}
+.title5 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 2px;
+    margin-top: 120px;
+    border-bottom: solid 1px #000;
+}
 .selfie {
-    max-width: 100%;
+    max-width: 45%;
     display: block;
-    width: 50%;
+    width: 45%;
     margin: 20px auto;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: scale(1.05);
+    margin-top: 150px; 
+    margin-bottom: 250px; 
 }
-
+.selfie:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
 .local {
     max-width: 100%;
     text-align: center;
@@ -156,12 +227,7 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-body {
-    background-color: #f7f7f7;
-    font-family: Arial, sans-serif;
-    color: #000;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
+
 .text-box0 {
     border-radius: 10px;
     padding: 20px;
@@ -172,30 +238,71 @@ body {
     max-width: 600px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     box-shadow: #111;
-}
-.text-box1 {
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
-    font-family: 'Georgia', serif;
-    max-width: 600px;
-    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
-
+    border: solid 1px rgb(46, 45, 45) ;
+    margin-bottom: 250px;
 }
 .text-box2 {
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
+    margin-top: 10px;
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Georgia', serif;
     max-width: 600px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    border: solid 1px rgb(46, 45, 45) ;
+    margin-bottom: 250px;
 }
 section, article, .text-box, .input-box {
     margin-bottom: 40px;
+}
+.carrosel {
+    margin-top: 40px; 
+    text-align: center; 
+    margin-bottom: 200px;
+}
+.carrosel-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
+.carrosel-item {
+    background-color: #f5eddb; 
+    border-radius: 10px; 
+    padding: 10px; 
+    width: 250px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+
+}
+
+.carrosel-item:hover {
+    transform: translateY(-5px); 
+}
+
+.carrosel-item img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carrosel-item p{
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 5%;
+}
+.carrosel-item span{
+    font-size: 1rem;
+    color: #333;
 }
 
 /*Formulário e Contato*/----------------------------------------------------------------------------------------
@@ -219,6 +326,7 @@ section, article, .text-box, .input-box {
     margin: 20px auto;
     margin-bottom: 40px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    text-align: center;
 }
 
 .input-box input {
@@ -253,24 +361,62 @@ footer {
 }
 
 .copyright {
-    background: #856039;
     text-align: center;
-    padding: 20px;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    
 }
 
-.contato button {
-  width: 40px;
-  height: 40px;
-  border: 0;
-  border-radius: 50%;
-  background-color: #5cee99;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin: 0 3px;
-  box-shadow: 0px 0px 8px #49a870;
+.rodape{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.line{
+    display: flex;
+    width: 80%;
+    height: 2px;
+    border-color: #856039;
+    border: none;
+    margin: 10px 0;
 
 }
+.contato {
+    width: auto; 
+    height: auto;
+    border: 0;
+    font-size: 3px;
+    cursor: pointer; 
+    text-align: center; 
+    padding: 0px 10px; 
+    margin-bottom: 25px;
+    margin-left: 26px;
+  }
+
+  .contato a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .contato button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #856039;
+    font-size: 3px;
+    cursor: pointer;
+    margin: 0 3px; 
+    box-shadow: 0px 0px 8px rgb(99, 68, 35);
+
+ }
+
+ .contato i {
+    font-size: 20px; 
+    vertical-align: middle; 
+  }
 
 .contato button:hover {
     transform: scale(1.25);
@@ -279,21 +425,30 @@ footer {
 }
 
 .black{
-    color: #000000;
+    color: #ffffff;
+}
+.black:hover{
+    transform: scale(1.2s);
 }
 
-.social-box a img {
-  width: 40px; 
-  height: 40px;
-  margin: auto; 
-  transition: transform 0.3s ease; 
+.copyright {
+    width: auto;
+    text-align: center;
+    background-color: #856039;
+    padding: 10px 10px;
+    margin-top: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border-top: 1px solid #b19b84; 
+    margin-top: 30px;
+    padding-top: 20px; 
 }
+
 
 /* Tema Escuro */----------------------------------------------------------------------------------
 
 body.dark-theme .input-box input {
     background-color: #444;
-    color: #000000;
+    color: #fdfdfd;
     border: 1px solid #666;
 }
 
@@ -326,12 +481,11 @@ body.dark-theme .menu li a:hover {
 }
 
 body.dark-theme footer {
-    background: #444;
-    color: #000000;
+    
+    color: #ffffff;
 }
 
 body.dark-theme .copyright {
-    background: #333;
     color: #fff;
 }
 
@@ -347,6 +501,16 @@ body.dark-theme .local {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
 }
 
+body.dark-theme .carrosel-item{
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+body.dark-theme .carrosel-item p {
+    color: #eee;
+}
+body.dark-theme .carrosel-item span {
+    color: #eee;
+}
 .theme-button {
     position: fixed;
     top: 110px;
@@ -378,7 +542,7 @@ body.dark-theme .local {
 }
 
 body.dark-theme .menu li a {
-    color: #5cee99;
+    color: #ebebeb;
 }
 
 body.dark-theme .menu li a:hover {
@@ -388,16 +552,38 @@ body.dark-theme .menu li a:hover {
 body.dark-theme .black{
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
+body.dark-theme .title1  {
+    color: white;
+}
+body.dark-theme .title2  {
+    color: white;
+}
+body.dark-theme .title3  {
+    color: white;
+}
+body.dark-theme .title4  {
+    color: white;
+}
+body.dark-theme .text-box0{
+    border-color: white;
+}
+body.dark-theme .text-box1{
+    border-color: white;
+}
+body.dark-theme .text-box2{
+    border-color: white;
+}
+body.dark-theme .input-box{
+    background-color:rgb(46, 45, 45) ;
+    color: white;
+}
+body.dark-theme .title4{
+    color: #ffffff;
+}
+body.dark-theme .title5{
+    color: white;
+    border-color: white;
+}
 
 
 
