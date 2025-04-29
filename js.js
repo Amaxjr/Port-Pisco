@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
                   // Menu mobile
 let giMenu = document.getElementById("gi-social")
 let menu = document.getElementById("menu-mobile")
@@ -77,3 +78,5 @@ menu.addEventListener("click",()=>{
 overlay.addEventListener("click",()=>{
     menu.classList.remove("abrir-menu")
 })
+
+
