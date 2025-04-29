@@ -128,11 +128,19 @@ li.sobre :hover{
     .input-box {
         width: 90%;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+
+    }
 }
 
 @media (max-width: 768px) {
-    .selfie, .local {
-        width: 90%;
+    .foto {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 }
 
