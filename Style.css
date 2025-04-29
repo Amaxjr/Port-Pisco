@@ -9,7 +9,7 @@ body, ul, li, p {
 
 body {
     background-color: #F7F4F1;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     color: #000;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -159,7 +159,7 @@ li.sobre :hover{
     color: rgb(0, 0, 0);
     font-size: 20px;
     max-width: 800px;
-
+    font-family: Times, 'Times New Roman', serif;
 }
 .title2 {
     text-align: center;
@@ -169,6 +169,7 @@ li.sobre :hover{
     color: rgb(0, 0, 0);
     font-size: 20px;
     max-width: 800px;
+    font-family: Times, 'Times New Roman', serif;
 } 
 .title3 {
     text-align: center;
@@ -179,6 +180,7 @@ li.sobre :hover{
     font-size: 20px;
     max-width: 800px;
     margin-bottom: 40px;
+    font-family: Times, 'Times New Roman', serif;
 }
 .title4 {
     text-align: center;
@@ -189,7 +191,7 @@ li.sobre :hover{
     font-size: 20px;
     max-width: 800px;
     margin-bottom: 20px;
-    
+    font-family: Times, 'Times New Roman', serif;
 }
 .title5 {
     text-align: center;
@@ -201,6 +203,7 @@ li.sobre :hover{
     margin-bottom: 2px;
     margin-top: 120px;
     border-bottom: solid 1px #000;
+    font-family: Times, 'Times New Roman', serif;
 }
 .selfie {
     max-width: 45%;
@@ -229,6 +232,7 @@ li.sobre :hover{
 
 
 .text-box0 {
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -240,18 +244,22 @@ li.sobre :hover{
     box-shadow: #111;
     border: solid 1px rgb(46, 45, 45) ;
     margin-bottom: 250px;
+    font-family: Times, 'Times New Roman', serif;
 }
 .text-box2 {
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 10px;
+    margin: 20px auto;
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Georgia', serif;
     max-width: 600px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: #111;
     border: solid 1px rgb(46, 45, 45) ;
     margin-bottom: 250px;
+    font-family: Times, 'Times New Roman', serif;
 }
 section, article, .text-box, .input-box {
     margin-bottom: 40px;
@@ -327,6 +335,7 @@ section, article, .text-box, .input-box {
     margin-bottom: 40px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     text-align: center;
+    font-family: Times, 'Times New Roman', serif;
 }
 
 .input-box input {
@@ -339,6 +348,7 @@ section, article, .text-box, .input-box {
     box-sizing: border-box;
     background-color: #fff;
     color: #000;
+    
 }
 
 .input-box .submit {
@@ -574,7 +584,7 @@ body.dark-theme .text-box2{
     border-color: white;
 }
 body.dark-theme .input-box{
-    background-color:rgb(46, 45, 45) ;
+    background-color: rgb(46, 45, 45) ;;
     color: white;
 }
 body.dark-theme .title4{
